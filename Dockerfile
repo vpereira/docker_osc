@@ -1,5 +1,5 @@
 # FROM opensuse:latest
-ROM opensuse:42.1
+FROM opensuse:42.1
 RUN zypper ref && zypper -n up
 RUN zypper -n in ca-certificates-cacert
 RUN zypper -n in vim gcc python-devel git osc  \
